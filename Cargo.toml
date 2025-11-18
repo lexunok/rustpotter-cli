@@ -8,10 +8,10 @@ authors = ["Miguel Álvarez Díez <miguelwork92@gmail.com>"]
 repository = "https://github.com/GiviMAD/rustpotter-cli"
 exclude = ["tools/**",".github",".gitignore"]
 [dependencies]
-rustpotter = { version = "3.0.2", features = ["debug", "display", "audio", "record"] }
+rustpotter = { git = "https://github.com/lexunok/rustpotter.git", branch = "main", features = ["debug", "display", "audio", "record"] }
 ctrlc = "3.2.2"
 clap = { version = "4.4.6", features = ["derive"] }
 hound = "3.5.1"
-cpal = "0.15.2"
+cpal = "0.16.0"
 time = "0.3.29"
 gag = "1.0.0"
